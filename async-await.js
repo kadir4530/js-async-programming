@@ -40,7 +40,7 @@ let data = [
         ownerID: 3,
     }
 ]
-
+// Kullanici login islemi
 function loginUser(userName, password) {
     console.log("Checking user")
     return new Promise((resolve, reject) => {
@@ -53,6 +53,7 @@ function loginUser(userName, password) {
     })
 }
 
+//Kullanici bazli filtreleme
 function getDataByUser(user) {
     console.log("Getting data for user : " + user.userName)
     setTimeout(() => {
@@ -64,7 +65,7 @@ function getDataByUser(user) {
     }, 2000);
 }
 
-async function init() {
+async function initFunctions() {
 
     const user = await loginUser("admin", "123456");
     // const user = await loginUser("mustafa", "123456");

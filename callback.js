@@ -40,7 +40,7 @@ let data = [
         ownerID: 3,
     }
 ]
-
+// Kullanici login islemi
 function loginUser(userName, password, callback) {
     console.log("Checking user")
     setTimeout(() => {
@@ -53,7 +53,7 @@ function loginUser(userName, password, callback) {
             console.log("Kullanici bulunumadi")
     }, 2000);
 }
-
+//Kullanici bazli filtreleme
 function getDataByUser(user) {
     console.log("Getting data for user : " + user.userName)
     setTimeout(() => {
