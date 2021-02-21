@@ -76,4 +76,4 @@ async function initFunctions() {
     getDataByUser(user)
 }
 
-init();
+initFunctions();
